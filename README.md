@@ -1,0 +1,1 @@
+I will learn how to properly use HTML and CSS in creating a website. I will familiarize myself in using HTML and CSS.
