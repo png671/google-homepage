@@ -32,12 +32,36 @@ body {
     width: 40%; 
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display:inline;
+    font-family: arial,sans-serif;
+}
+
+#end{
+    margin-right: 0;
+}
+
+#bottom {
+    background-color: rgb(218, 220, 224);
+    color: #70757a;
+}
+
 </style>
 
 <head>
     <header>
-    <div id="top">Gmail Images</div>
+   <ul>
+    <li><a href="">Gmail</a></li>
+    <li><a href="">Images</a></li>
     <button>Sign In</button>
+   </ul>
+    
     </header>
 </head>
 
@@ -49,10 +73,18 @@ body {
 <input id="logo" type="text" placeholder="Search">
 
 <button id="but">Google Search</button><button id="but">I'm Feeling Lucky</button>
-
+<div></div>
 </body>
 <footer>
-<div> Advertising Business About How Search works</div></div>  Privacy Terms Settings</div>
+    <ul id="bottom"> 
+        <li>Advertising</li>    
+        <li>Business</li>
+        <li>About</li>
+        <li>How Search works</li>
+        <li id="end">Privacy</li>
+        <li id="end">Terms</li>
+        <li id="end">Settings</li>
+    </ul>
 
 </footer>
 </html>
