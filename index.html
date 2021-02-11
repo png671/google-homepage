@@ -2,10 +2,6 @@
 <html>
 <style>
     
-header { 
-   font-family: arial,sans-serif;
-   font-size: 13px;
-}
 
 footer {
     display: block;
@@ -17,41 +13,8 @@ footer {
 }
 
 body {
-    background-color: white;
-}
-
-.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    padding: 109px 0px 0px;
-}
-
-input{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-
-}
-
-.but {
-    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
-    background-color: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    border-radius: 4px;
-    color: #5F6368;
     font-family: arial,sans-serif;
-    font-size: 14px;
-    margin: 11px 4px;
-    padding: 0 16px;
-    line-height: 27px;
-    height: 36px;
-    min-width: 54px;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
+   font-size: 13px;
 }
 
 ul {
@@ -73,11 +36,6 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 
-}
-
-
-.end{
-    float:right;
 }
 
 .bottom {
@@ -106,21 +64,102 @@ li a {
     height: 34px !important;
 }
 
+.but {
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 109px 0px 0px;
+}
+
+    .topbox{
+        display:flex;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        position: relative;
+        text-align: right;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        white-space: nowrap;
+    }
+
+    .navbar{
+        display: inline-block;
+        line-height: 24px;
+        vertical-align: middle;
+        white-space: nowrap;
+        text-align: right;
+        font-size: 13px;
+        padding-left: 15px;
+
+
+    }
+
+    .navbar a {
+        color: #202124
+
+    }
+
+
+    .apps {
+        background-image: url('//ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+        background-size: 528px 68px;
+        background-position: -132px -38px;
+        box-sizing: border-box;
+        height: 30px;
+        width: 30px;
+        border-radius: 2px;
+        opacity: .85;
+        padding-right: 10px;
+    }
+
+    .signin{
+      color: #fff;
+      border: 1px solid #4285f4;
+      font-weight: bold;
+      outline: none;
+      background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+      padding: 0px 12px;
+      line-height: 26px;
+    }
 
 
 </style>
 
-
-<head>
-    <header>
-   <ul>
-    <button class="blueb" style="float:right"><a href="">Sign In</a></button>
-    <li class="end"><a href="">Gmail</a></li>
-    <li class="end"><a href="">Images</a></li>
-   </ul>
+<header>
+<ul class="topbox">
     
-    </header>
-</head>
+    <li class="navbar"><a href="#gmail">Gmail</a></li>
+    
+    <li class="navbar" style="padding-right: 15px"><a href="#images">Images</a></li>
+
+    <li class="navbar apps"><a href="#apps"></a></li>
+
+    <li class="navbar"><a href="#signin"><button class="signin">Sign In</button></a></li>
+</ul>
+
+</header>
 
     
 
