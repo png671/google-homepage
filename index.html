@@ -1,225 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        body {
-            font-family: arial,sans-serif;
-            font-size: 13px;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <link href="google.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <ul class="topbox">
     
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-        }
+                <li class="navbar"><a href="#gmail">Gmail</a></li>
     
-        li {
-            float:left;
-        }
-    
-        li a {
-            display:inline-block;
-            text-align: center;
-            text-decoration: none;
-        }
-    
-    
-        .topbox{
-            display:flex;
-            padding-left: 30px;
-            padding-right: 30px;
-            padding-top: 10px;
-            position: relative;
-            text-align: right;
-            align-items: center;
-            justify-content: flex-end;
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-            white-space: nowrap;
-        }
-    
-        .navbar{
-            display: inline-block;
-            line-height: 24px;
-            vertical-align: middle;
-            white-space: nowrap;
-            text-align: right;
-            font-size: 13px;
-            padding-left: 15px;
-    
-    
-        }
-    
-        .navbar a {
-            color: #202124
-    
-        }
-    
-        .apps {
-            background-image: url('//ssl.gstatic.com/gb/images/i1_1967ca6a.png');
-            background-size: 528px 68px;
-            background-position: -132px -38px;
-            box-sizing: border-box;
-            height: 30px;
-            width: 30px;
-            border-radius: 2px;
-            opacity: .85;
-            padding-right: 10px;
-        }
-    
-        .signin{
-          color: #fff;
-          border: 1px solid #4285f4;
-          font-weight: bold;
-          outline: none;
-          background: -webkit-linear-gradient(top,#4387fd,#4683ea);
-          padding: 0px 12px;
-          line-height: 26px;
-        }
-    
-        .cen{
-          display:flex;
-          justify-content: center;
-          align-items: center;
-          
-        }
-    
-        .footer{
-            color: black;
-            text-align: center;
-            text-decoration: none;
-            color: #70757a;
-            padding-left: 27px;
-        }
-    
-        .botbox{
-          bottom: 0;
-          left: 0;
-          position: absolute;
-          right: 0;
-          line-height: 40px;
-          border-top: 1px solid #dadce0;
-          }
-    
+                <li class="navbar" style="padding-right: 15px"><a href="#images">Images</a></li>
+
+                <li class="navbar apps"><a href="#apps"></a></li>
+
+                <li class="navbar"><a href="#signin"><button class="signin">Sign In</button></a></li>
         
-          .center{
-          
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-    
-        }
-        
-        .logo {
-          height: 92px;
-          aspect-ratio: auto 272 / 92;
-        }
-    
-        .button{
-          background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
-          background-color: #f2f2f2;
-          border: 1px solid #f2f2f2;
-          border-radius: 4px;
-          color: #5F6368;
-          margin: 11px 4px;
-          padding: 0 16px;
-          line-height: 27px;
-          height: 36px;
-          min-width: 54px;
-          text-align: center;
-          cursor: pointer;
-        }
-    
-        .sbox{
-            background: #fff;
-            display: flex;
-            border: 1px solid #dfe1e5;
-            box-shadow: none;
-            border-radius: 24px;
-            z-index: 3;
-            height: 44px;
-            margin: 0 auto;
-            width: 582px;
-            padding: 5px 8px 0 16px;
-        }
-        
-        .search{
-            background-color: transparent;
-            border: none;
-            margin: 0;
-            padding: 0;
-            color: rgba(0,0,0,.87);
-            word-wrap: break-word;
-            outline: none;
-            display: flex;
-            flex: 100%;
-            font: 16px arial,sans-serif;
-            line-height: 34px;
-            height: 34px !important;
-            padding-top: -1px;
-        }
-    
-        .sboxlogo{
-          fill: currentColor;
-          line-height: 24px;
-          margin: auto;
-          color: #9aa0a6;
-          display: block;
-          height: auto;
-          width: 20px;
-          padding-right:13px;
-          display: flex;
-          align-items: center;
-          
-        }
-        
-    
-    </style>
+            </ul>
 
-<body>
-
-<header>
-<ul class="topbox">
-    
-    <li class="navbar"><a href="#gmail">Gmail</a></li>
-    
-    <li class="navbar" style="padding-right: 15px"><a href="#images">Images</a></li>
-
-    <li class="navbar apps"><a href="#apps"></a></li>
-
-    <li class="navbar"><a href="#signin"><button class="signin">Sign In</button></a></li>
-</ul>
-
-</header>
+        </header>
 
 
-<div>
-    <img class="center logo" style="padding-top:109px; width:272" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-</div>
+        <div>
+            <img class="center logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
     
-    <div class="cen sbox">
-      <div class="sboxlogo">
-        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
-      </div>
-      <input class="search" type="text">
-    </div>
+        <div class="cen sbox">
+            <div class="sboxlogo">
+                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+            </div>
+            <input class="search" type="text">
+        </div>
     
-    <div class="cen">
-      <button class="button">Google Search</button>
-      <button class="button">I'm Feeling Lucky</button>
-</div>
+        <div class="cen">
+            <button class="button">Google Search</button>
+            <button class="button">I'm Feeling Lucky</button>
+        </div>
 
-<footer id="footer" class="botbox" style="background-color: #F2F2F2">
-    <ul>
-        <li class="footer">Advertising</li>
-        <li class="footer">Business</li>
-        <li class="footer">About</li>
-        <li class="footer">How Search works</li>
-        <li style="float:right; padding-right:27px" class="footer">Settings</li>
-        <li style="float:right"class="footer">Terms</li>
-        <li style="float:right"class="footer">Privacy</li>
-    </ul>
-    </footer>
+        <footer class="botbox">
+            <ul>
+                <li class="footer">Advertising</li>
+                <li class="footer">Business</li>
+                <li class="footer">About</li>
+                <li class="footer">How Search works</li>
+                <li style="padding-right:27px"class="footer opps">Settings</li>
+                <li class="footer opps">Terms</li>
+                <li class="footer opps">Privacy</li>
+            </ul>
+        </footer>
 
-</body>
+    </body>
 
 </html>
